@@ -1,10 +1,11 @@
 package org.mancilla.Data;
 
-public class UserSignUp {
+public class UserStartsSignUp {
     private final String email;
     private final String name;
 
-    public UserSignUp(String name, String email) {
+
+    public UserStartsSignUp(String name, String email) {
         this.name = name;
         this.email = email;
     }
