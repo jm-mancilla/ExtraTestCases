@@ -5,12 +5,10 @@ import net.serenitybdd.annotations.Step;
 import net.serenitybdd.core.steps.UIInteractions;
 import org.mancilla.Data.UserEndsSignUp;
 import org.mancilla.Page.SignUpPage;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 
-public class UserEndsSignUpAction extends UIInteractions {
+import static org.mancilla.Data.Users.password;
+
+public class SignUpAction extends UIInteractions {
     @Managed
     SignUpPage signUpPage;
     @Step("And the user fill the form in order to created a new account")
@@ -39,5 +37,33 @@ public class UserEndsSignUpAction extends UIInteractions {
         signUpPage.getZipCode().sendKeys(userEndsSignUp.getZipCode());
         signUpPage.getMobileNumber().sendKeys(userEndsSignUp.getMobileNumber());
         signUpPage.getCreateAccountButton().click();
-    } 
+    }
+    public void setPassword(String password){
+        signUpPage.getSignUpPassword().sendKeys(password);
+    }
+    public String checkFieldNameIsNotNull(){
+        return signUpPage.getName().getText();
+    } public String checkFieldEmailIsNotNull(){
+        return signUpPage.getEmail().getText();
+    }public String checkAccountHasBeenCreated(){
+        return signUpPage.getcreatedAccount().getText();
+    }
+    @Step("And the user click on Continue button")
+    public void clickContinueButtonForm(){
+        signUpPage.getContinueButton().click();
+    }
+    public boolean loginAsIsVisible(){
+      return signUpPage.getLoginAs().isVisible();
+    }
+    @Step("And the user select Delete account option")
+    public void clickDeleteAccount(){
+        signUpPage.getDeleteAccount().click();
+    }
+    public boolean checkDeletedAccountMessageIsVisible(){
+      return signUpPage.getDeleteAccountMessage().isVisible();
+    }
+    @Step("And the user click on continue button")
+    public void clickContinueButtonAftersDeletedAccount(){
+        signUpPage.getContinueButtonAfterDeletedAccount().click();
+    }
 }
