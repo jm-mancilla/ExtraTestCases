@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76bce885-5001-4d01-ae4c-666d7d46bbda" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mancilla/Actions/SignUpAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/Actions/LoginPageAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mancilla/Actions/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/Actions/UserEndsSignUpAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/Actions/UserStartsSignUpAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/Actions/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mancilla/Actions/LoginAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/Actions/SignUpAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mancilla/Actions/SignUpAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/Data/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mancilla/Data/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/Page/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mancilla/Page/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/Page/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mancilla/Page/SignUpPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/mancilla/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/mancilla/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,27 +44,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.AppTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppTest.sysos.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppTest.usersCanLogIn.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.serenityintro [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.serenityintro [verify].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AppTest.deleteExcesiveAccounts.executor": "Run",
+    "JUnit.AppTest.executor": "Run",
+    "JUnit.AppTest.sysos.executor": "Run",
+    "JUnit.AppTest.usersCanLogIn.executor": "Run",
+    "JUnit.AppTest.usersCanLogOut.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.serenityintro [clean].executor": "Run",
+    "Maven.serenityintro [verify].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.mancilla.Page" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest.usersCanLogIn">
+  <component name="RunManager" selected="JUnit.AppTest.usersCanLogOut">
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ExtraTestCases" />
       <extension name="coverage">
@@ -75,6 +78,22 @@
       <option name="PACKAGE_NAME" value="org.mancilla" />
       <option name="MAIN_CLASS_NAME" value="org.mancilla.AppTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.deleteExcesiveAccounts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExtraTestCases" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.mancilla.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.mancilla" />
+      <option name="MAIN_CLASS_NAME" value="org.mancilla.AppTest" />
+      <option name="METHOD_NAME" value="deleteExcesiveAccounts" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,13 +130,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppTest.usersCanLogOut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExtraTestCases" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.mancilla.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.mancilla" />
+      <option name="MAIN_CLASS_NAME" value="org.mancilla.AppTest" />
+      <option name="METHOD_NAME" value="usersCanLogOut" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest.usersCanLogOut" />
+        <item itemvalue="JUnit.AppTest.deleteExcesiveAccounts" />
         <item itemvalue="JUnit.AppTest.usersCanLogIn" />
         <item itemvalue="JUnit.AppTest.sysos" />
         <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="JUnit.AppTest.usersCanLogIn" />
-        <item itemvalue="JUnit.AppTest.sysos" />
       </list>
     </recent_temporary>
   </component>
@@ -151,6 +186,15 @@
     </option>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/mancilla/AppTest.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.openqa.selenium.By$Remotable$Parameters" memberName="value" />

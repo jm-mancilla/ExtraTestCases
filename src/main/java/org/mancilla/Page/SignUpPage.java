@@ -40,6 +40,7 @@ public class SignUpPage extends PageObject {
 
     private final By loginAs = By.cssSelector("i[class='fa fa-user']");
     private final By deleteAccount = By.cssSelector("i[class='fa fa-trash-o']");
+    private final By logOut = By.cssSelector("i[class='fa fa-lock']");
     private final By accountHasBeenDeleted = By.cssSelector("h2[data-qa='account-deleted']");
 
 
@@ -104,6 +105,8 @@ public class SignUpPage extends PageObject {
         return this.find(accountHasBeenDeleted);
     }public WebElementFacade getContinueButtonAfterDeletedAccount(){
         return this.find(continueButtonAfterDeletedAccount);
+    }public WebElementFacade getLogOut(){
+        return this.find(logOut);
     }
 
 

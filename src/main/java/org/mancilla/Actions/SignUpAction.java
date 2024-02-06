@@ -66,4 +66,8 @@ public class SignUpAction extends UIInteractions {
     public void clickContinueButtonAftersDeletedAccount(){
         signUpPage.getContinueButtonAfterDeletedAccount().click();
     }
+    @Step("And the user click on Log Out option")
+    public void clickOnLogOut(){
+        signUpPage.getLogOut().click();
+    }
 }
