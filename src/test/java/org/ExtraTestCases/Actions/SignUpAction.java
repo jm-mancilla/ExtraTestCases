@@ -1,12 +1,10 @@
-package org.mancilla.Actions;
+package org.ExtraTestCases.Actions;
 
 import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.annotations.Step;
 import net.serenitybdd.core.steps.UIInteractions;
-import org.mancilla.Data.UserEndsSignUp;
-import org.mancilla.Page.SignUpPage;
-
-import static org.mancilla.Data.Users.password;
+import org.ExtraTestCases.Page.SignUpPage;
+import org.ExtraTestCases.Data.UserEndsSignUp;
 
 public class SignUpAction extends UIInteractions {
     @Managed

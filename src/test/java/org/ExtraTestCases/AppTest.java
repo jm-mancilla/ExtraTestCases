@@ -1,27 +1,24 @@
-package org.mancilla;
+package org.ExtraTestCases;
 
 import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.junit5.SerenityJUnit5Extension;
+import org.ExtraTestCases.Actions.LoginAction;
+import org.ExtraTestCases.Data.UserStartsSignUp;
+import org.ExtraTestCases.Data.Users;
+import org.ExtraTestCases.Page.LoginPage;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mancilla.Actions.LoginAction;
-import org.mancilla.Actions.SignUpAction;
-import org.mancilla.Data.UserEndsSignUp;
-import org.mancilla.Data.UserStartsSignUp;
-import org.mancilla.Data.Users;
-import org.mancilla.Page.LoginPage;
-import org.mancilla.Page.SignUpPage;
-import org.openqa.selenium.By;
+import org.ExtraTestCases.Actions.ContactUsAction;
+import org.ExtraTestCases.Actions.SignUpAction;
+import org.ExtraTestCases.Page.SignUpPage;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mancilla.Data.Users.*;
 
 @ExtendWith(SerenityJUnit5Extension.class)
 public class AppTest {
@@ -33,7 +30,10 @@ public class AppTest {
     LoginPage loginPage;
     @Managed
     SignUpPage signUpPage;
+    @Managed
+    ContactUsAction contactUsAction;
 
+    @Disabled("Running under cucumber")
     @Test
     public void usersCanLogIn() throws InterruptedException {
         loginAction.accessToThePage();
@@ -45,8 +45,8 @@ public class AppTest {
         Serenity.reportThat("Then I validate that Signup form is visible", () ->
                 assertThat(loginAction.checkSignUpFormIsVisible()));
 
-        loginAction.firstsignUp(userStartsSignUp);
-        signUpAction.setPassword(password);
+        loginAction.firstsignUp(Users.userStartsSignUp);
+        signUpAction.setPassword(Users.password);
 
 
         Serenity.reportThat("Then I validate that Name is filled",
@@ -55,7 +55,7 @@ public class AppTest {
                 () -> assertThat(signUpAction.checkFieldEmailIsNotNull()).isNotNull());
 
 
-        signUpAction.finalSignUpForm(userEndsSignUp);
+        signUpAction.finalSignUpForm(Users.userEndsSignUp);
 
         Serenity.reportThat("Then I validate the the account was successfully created",
                 () -> assertThat(signUpAction.checkAccountHasBeenCreated()).isEqualToIgnoringCase("ACCOUNT CREATED!"));
@@ -80,7 +80,7 @@ public class AppTest {
     @Test
     public void deleteExcessiveAccounts(){
 
-        List<UserStartsSignUp> lista = new ArrayList<>(Arrays.asList(userStartsSignUp84,userStartsSignUp85,userStartsSignUp86,userStartsSignUp87,userStartsSignUp88,userStartsSignUp89,userStartsSignUp90,userStartsSignUp91,userStartsSignUp92,userStartsSignUp93,userStartsSignUp94,userStartsSignUp95,userStartsSignUp96,userStartsSignUp97,userStartsSignUp98,userStartsSignUp99,userStartsSignUp100));
+        List<UserStartsSignUp> lista = new ArrayList<>(Arrays.asList(Users.userStartsSignUp84, Users.userStartsSignUp85, Users.userStartsSignUp86, Users.userStartsSignUp87, Users.userStartsSignUp88, Users.userStartsSignUp89, Users.userStartsSignUp90, Users.userStartsSignUp91, Users.userStartsSignUp92, Users.userStartsSignUp93, Users.userStartsSignUp94, Users.userStartsSignUp95, Users.userStartsSignUp96, Users.userStartsSignUp97, Users.userStartsSignUp98, Users.userStartsSignUp99, Users.userStartsSignUp100));
         int position = 0;
         loginAction.accessToThePage();
 
@@ -117,6 +117,7 @@ public class AppTest {
 
         }
     }
+    @Disabled("Running under cucumber")
     @Test
     public void usersCanLogOut(){
         loginAction.accessToThePage();
@@ -125,13 +126,33 @@ public class AppTest {
         loginAction.clickSignUpButton();
         Serenity.reportThat("Then I validate that HomePage is visible",
                 ()-> assertThat(loginAction.checkLoginAccountLabelIsVisible()));
-        loginAction.logIn(userLogin);
+        loginAction.logIn(Users.userLogin);
         Serenity.reportThat("Then I validate that Logged oin as: user is visible",
                 ()-> assertThat(signUpAction.loginAsIsVisible()));
         signUpAction.clickOnLogOut();
         Serenity.reportThat("Then I validate that HomePage is visible after loggin out",
                 ()-> assertThat(loginAction.checkLoginAccountLabelIsVisible()));
     }
+@Disabled("Running under cucumber")
+    @Test
+    public void usersCanContactUs() throws InterruptedException {
+        loginAction.accessToThePage();
+        Serenity.reportThat("Then I validate that HomePage is visible",
+                ()-> assertThat(loginAction.checkHomePageIsVisible()));
+        loginAction.clickOnContactUs();
+
+            Serenity.reportThat("Then I validate that GET IN TOUCH label is visble",
+                    ()-> assertThat(loginAction.checkGetInTouchLabelIsVisible()));
+            contactUsAction.fillContactUsForm(Users.userStartsSignUp);
+            contactUsAction.clickOnSubmit();
+            contactUsAction.clickOnAceptar();
+    Serenity.reportThat("Then I validate that success message is visible",
+            ()-> assertThat(contactUsAction.checkSuccessAfterAlert()));
+    loginAction.clickOnHomeButton();
+    Serenity.reportThat("Then I validate HomePage is visible",
+                ()-> assertThat(loginAction.checkHomePageIsVisible()));
 
 
-}
+        }
+
+    }

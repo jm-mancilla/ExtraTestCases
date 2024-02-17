@@ -1,4 +1,4 @@
-package org.mancilla.Data;
+package org.ExtraTestCases.Data;
 
 public class UserLogin {
     private final String email;
@@ -8,7 +8,6 @@ public class UserLogin {
         this.email = email;
         this.password = password;
     }
-
 
     public String getEmail(){
         return this.email;

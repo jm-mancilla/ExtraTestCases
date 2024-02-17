@@ -1,12 +1,18 @@
-package org.mancilla.Actions;
+package org.ExtraTestCases.Actions;
 
 import net.serenitybdd.annotations.DefaultUrl;
 import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.annotations.Step;
+import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.core.steps.UIInteractions;
-import org.mancilla.Data.UserLogin;
-import org.mancilla.Data.UserStartsSignUp;
-import org.mancilla.Page.LoginPage;
+import org.ExtraTestCases.Data.UserLogin;
+import org.ExtraTestCases.Data.UserStartsSignUp;
+import org.ExtraTestCases.Page.LoginPage;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 @DefaultUrl("https://automationexercise.com")
 public class LoginAction extends UIInteractions {
@@ -42,5 +48,33 @@ public class LoginAction extends UIInteractions {
         loginPage.getLoginEmail().sendKeys(userLogin.getEmail());
         loginPage.getLoginPassword().sendKeys(userLogin.getPassword());
         loginPage.clickLoginButton().click();
+    }
+    @Step("And the user click on Contact Us option")
+    public void clickOnContactUs(){
+        loginPage.contactUs().click();
+    }
+    public boolean checkGetInTouchLabelIsVisible(){
+        List<WebElementFacade> list = loginPage.contactUsLabels();
+        List<String> aux = new ArrayList<>();
+        boolean visible= false;
+        for (int i = 0; i <list.size() ; i++){
+           if( list.get(i).getText().equalsIgnoreCase("GET IN TOUCH")){
+               System.out.println("visible");
+               visible = loginPage.contactUsLabels().get(i).isVisible();
+               aux.add(list.get(i).getText());
+           } else {
+               visible = false;
+           }
+
+        }
+        System.out.println(aux);
+        return visible;
+    }
+
+    public void clickOnHomeButton(){
+        loginPage.getHomeButton().click();
+    }
+    public void clickOnCartOption(){
+        loginPage.getCartOption.click();
     }
 }

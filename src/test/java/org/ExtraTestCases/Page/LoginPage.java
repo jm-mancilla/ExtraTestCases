@@ -1,11 +1,14 @@
-package org.mancilla.Page;
+package org.ExtraTestCases.Page;
 
 import net.serenitybdd.annotations.DefaultUrl;
 import net.serenitybdd.annotations.Managed;
+import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
-import org.mancilla.Data.UserStartsSignUp;
+import org.ExtraTestCases.Data.UserStartsSignUp;
 import org.openqa.selenium.By;
+
+import java.util.List;
 
 @DefaultUrl("https://automationexercise.com/")
 public class LoginPage extends PageObject {
@@ -23,6 +26,9 @@ public class LoginPage extends PageObject {
    private final By errorLogin = By.cssSelector("p[style='color: red;']");
    private final By loginButton = By.cssSelector("button[data-qa='login-button']");
    private final By loginAccountLabel = By.cssSelector("div.login-form>h2");
+   private final By contactUs = By.cssSelector("i[class='fa fa-envelope']");
+   private final By getInTouchLabel = By.cssSelector("h2[class='title text-center']");
+   private final By getHomeButton = By.cssSelector("i[class='fa fa-angle-double-left']");
 
     public void openPage(){
         this.open();
@@ -51,5 +57,13 @@ public class LoginPage extends PageObject {
     public WebElementFacade getLoginError(){return this.find(errorLogin);}
     public WebElementFacade clickLoginButton(){return this.find(loginButton);}
     public WebElementFacade checkLoinAccountLabelIsVisible(){return this.find(loginAccountLabel);}
+    public WebElementFacade contactUs(){return this.find(contactUs);}
+    public List<WebElementFacade> contactUsLabels(){return this.findAll(getInTouchLabel);}
+    public WebElementFacade getHomeButton(){
+        return this.find(getHomeButton);
+    }
+
+    @FindBy(css = "a[href='/view_cart']")
+    public WebElementFacade getCartOption;
 
 }

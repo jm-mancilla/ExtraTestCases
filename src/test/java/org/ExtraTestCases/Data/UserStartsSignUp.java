@@ -1,4 +1,4 @@
-package org.mancilla.Data;
+package org.ExtraTestCases.Data;
 
 public class UserStartsSignUp {
     private final String email;

@@ -1,4 +1,4 @@
-package org.mancilla.Data;
+package org.ExtraTestCases.Data;
 
 public class Users {
     public static final UserStartsSignUp userStartsSignUp84 = new UserStartsSignUp("ChimyAdmin84", "Chimyadmin84@gmail.com");
@@ -22,4 +22,6 @@ public class Users {
     public static final UserEndsSignUp userEndsSignUp = new UserEndsSignUp("Chimy","Ávila","Real Betis","Av Palmera","Luis del Sol","Canada","Sevilla","Sur América","41230","655777009");
     public static final UserLogin userLogin = new UserLogin("Chimyadmin@gmail.com", "admin");
     public static final String password = "admin";
+
+    public static final String filePath = "/Users/mancilla/Documents/test.rtf";
 }

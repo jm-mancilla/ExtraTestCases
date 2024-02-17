@@ -1,15 +1,9 @@
-package org.mancilla.Page;
+package org.ExtraTestCases.Page;
 
 import net.serenitybdd.annotations.DefaultUrl;
-import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
-import org.mancilla.Data.UserEndsSignUp;
-import org.mancilla.Data.UserStartsSignUp;
 import org.openqa.selenium.By;
-import org.openqa.selenium.interactions.Actions;
-
-import java.util.List;
 
 @DefaultUrl("https://automationexercise.com/")
 public class SignUpPage extends PageObject {
@@ -42,6 +36,7 @@ public class SignUpPage extends PageObject {
     private final By deleteAccount = By.cssSelector("i[class='fa fa-trash-o']");
     private final By logOut = By.cssSelector("i[class='fa fa-lock']");
     private final By accountHasBeenDeleted = By.cssSelector("h2[data-qa='account-deleted']");
+
 
 
     public WebElementFacade getName(){
@@ -108,6 +103,7 @@ public class SignUpPage extends PageObject {
     }public WebElementFacade getLogOut(){
         return this.find(logOut);
     }
+
 
 
 

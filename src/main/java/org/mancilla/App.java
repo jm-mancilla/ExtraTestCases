@@ -1,7 +1,5 @@
 package org.mancilla;
 
-import org.mancilla.Data.UserStartsSignUp;
-
 /**
  * Hello world!
  *
