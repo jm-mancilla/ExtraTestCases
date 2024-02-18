@@ -66,7 +66,7 @@ Feature: Using AutomationPractice
 
      @regression
      @TestCase-10
-    Scenario: Verify Subscrition
+    Scenario: Verify Subscription
      Given I navigate to AutomateExercise
      And I verify that home page is visible successfully
      When I scroll down to footer
@@ -87,6 +87,7 @@ Feature: Using AutomationPractice
 
     @regression
     @TestCase-12
+    @DeleteUserWhenItHasBeenCreated
   Scenario: Add Products in Cart
     Given I navigate to AutomateExercise
     And I verify that home page is visible successfully

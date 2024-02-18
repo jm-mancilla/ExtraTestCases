@@ -13,6 +13,7 @@ import org.ExtraTestCases.Page.SignUpPage;
 import org.ExtraTestCases.Page.CartPage;
 
 import org.ExtraTestCases.Data.UserLogin;
+import org.ExtraTestCases.Utils.Utils;
 
 import java.util.concurrent.TimeUnit;
 
@@ -35,6 +36,8 @@ public class AutomationExerciseSteps {
     FooterAction footerAction;
     @Managed
     CartAction cartAction;
+    @Managed
+    Utils utils;
     @Given("I access to AutomationExercise")
     public void iAccessToAutomationExercise() {
         loginAction.accessToThePage();
@@ -177,8 +180,9 @@ public class AutomationExerciseSteps {
     }
 
     @And("I click on Home button")
-    public void iClickOnHomeButton() {
+    public void iClickOnHomeButton() throws InterruptedException {
         loginAction.clickOnHomeButton();
+        utils.closeAdsAfterContactUs();
     }
     @And("I check that HomePage is visible after contact us")
     public void iCheckThatHomePageIsVisibleAfterContactUs(){

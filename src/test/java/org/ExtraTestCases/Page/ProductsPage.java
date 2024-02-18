@@ -14,6 +14,7 @@ public class ProductsPage extends PageObject {
     private final By allProductsList = By.cssSelector("i[class='fa fa-plus-square']");
     private final By productDetails = By.cssSelector("div[class='product-information']");
     private final By adsIframe = By.cssSelector("iframe[id='aswift_6']");
+    private final By adsAfterContactUs = By.cssSelector("iframe[id='aswift_1']");
     private final By ads = By.cssSelector("iframe[id='ad_iframe']");
     private final By aspa = By.xpath("//*[@id='dismiss-button']");
     private final By closeAds = By.cssSelector("div[aria-label='Close ad']");
@@ -42,6 +43,9 @@ public class ProductsPage extends PageObject {
         return this.find(aspa);
     }public WebElementFacade getCloseAds(){
         return this.find(closeAds);
+    }
+    public WebElementFacade getAdsAfterContactUs(){
+        return this.find(adsAfterContactUs);
     }
     @FindBy(css = "input[id='search_product']")
     public WebElementFacade getSearchProduct;

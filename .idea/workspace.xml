@@ -5,32 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76bce885-5001-4d01-ae4c-666d7d46bbda" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Actions/CartAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Actions/ContactUsAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Actions/FooterAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Actions/ProductsAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/CucumberTestSuite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Page/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Page/ContactUsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Page/FooterPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Page/ProductsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Parameter/ParameterDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Steps/AutomationExerciseSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Utils/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/automationExercise.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Operation/AutomationExerciseOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Operation/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Operation/OperationTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Steps/API/AutomationExerciseAPISteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/Actions/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Actions/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/Actions/SignUpAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Actions/SignUpAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mancilla/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/Data/UserEndsSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Data/UserEndsSignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/Data/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Data/UserLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/Data/UserStartsSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Data/UserStartsSignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/Data/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Data/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/Page/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Page/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mancilla/Page/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Page/SignUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/mancilla/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Page/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Page/ProductsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Steps/AutomationExerciseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Steps/AutomationExerciseSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/automationExercise.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/automationExercise.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,33 +46,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cucumber Java.Scenario: User can Search products.executor": "Run",
-    "Cucumber Java.Scenario: User can verify all products and product detail page.executor": "Run",
-    "JUnit.AppTest.deleteExcesiveAccounts.executor": "Run",
-    "JUnit.AppTest.executor": "Run",
-    "JUnit.AppTest.sysos.executor": "Run",
-    "JUnit.AppTest.usersCanContactUs.executor": "Run",
-    "JUnit.AppTest.usersCanLogIn.executor": "Run",
-    "JUnit.AppTest.usersCanLogOut.executor": "Run",
-    "JUnit.CucumberTestSuite (1).executor": "Run",
-    "JUnit.CucumberTestSuite.executor": "Run",
-    "JUnit.Gherkin/Cucumber.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.ExtraTestCases [clean].executor": "Run",
-    "Maven.ExtraTestCases [compile].executor": "Run",
-    "Maven.ExtraTestCases [verify].executor": "Run",
-    "Maven.serenityintro [clean].executor": "Run",
-    "Maven.serenityintro [verify].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Scenario: User can Search products.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: User can verify all products and product detail page.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppTest.deleteExcesiveAccounts.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppTest.sysos.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppTest.usersCanContactUs.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppTest.usersCanLogIn.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppTest.usersCanLogOut.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CucumberTestSuite (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CucumberTestSuite.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Gherkin/Cucumber.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ExtraTestCases [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ExtraTestCases [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ExtraTestCases [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.serenityintro [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.serenityintro [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.mancilla.Page" />
@@ -194,7 +178,7 @@
       <option name="MAIN_CLASS_NAME" value="org.ExtraTestCases.CucumberTestSuite" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea -Dcucumber.filter.tags=&quot;@TestCase-12&quot;" />
+      <option name="VM_PARAMETERS" value="-ea -Dcucumber.filter.tags=&quot;@regression&quot;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -247,15 +231,6 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/ExtraTestCases/AppTest.java</url>
-          <line>113</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.openqa.selenium.By$Remotable$Parameters" memberName="value" />

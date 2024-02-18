@@ -28,6 +28,21 @@ public class Utils extends PageObject {
             Thread.sleep(1000);
         }
     }
+
+    public void closeAdsAfterContactUs() throws InterruptedException {
+        Thread.sleep(1000);
+        if(productsPage.getAdsAfterContactUs().isVisible()) {
+            this.getDriver().switchTo().frame(productsPage.getAdsAfterContactUs());
+            if (productsPage.getAspa().isVisible()) {
+                productsPage.getAspa().click();
+            } else {
+                this.getDriver().switchTo().frame(productsPage.getAds());
+                productsPage.getCloseAds().click();
+            }
+            this.getDriver().switchTo().defaultContent();
+            Thread.sleep(1000);
+        }
+    }
     public void mouseHover(WebElementFacade webElementFacade){
         Actions actions = new Actions(this.getDriver());
         actions.moveToElement(webElementFacade).build().perform();
