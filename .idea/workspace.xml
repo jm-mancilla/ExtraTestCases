@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76bce885-5001-4d01-ae4c-666d7d46bbda" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Operation/AutomationExerciseOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Operation/Operation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Operation/OperationTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Steps/API/AutomationExerciseAPISteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Page/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Page/ProductsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Steps/AutomationExerciseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Steps/AutomationExerciseSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ExtraTestCases/Utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/automationExercise.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/automationExercise.feature" afterDir="false" />
-    </list>
+    <list default="true" id="76bce885-5001-4d01-ae4c-666d7d46bbda" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
